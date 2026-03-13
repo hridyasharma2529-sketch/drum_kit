@@ -1,11 +1,11 @@
 randomNumber1=Math.floor(Math.random()*6)+1;
 
-img_left="dice"+randomNumber1+".png";
+img_left="images/dice"+randomNumber1+".png";
 document.querySelector(".img1").setAttribute("src",img_left);
 
 randomNumber2=Math.floor(Math.random()*6)+1;
 
-img_right="dice"+randomNumber2+".png";
+img_right="images/dice"+randomNumber2+".png";
 document.querySelector(".img2").setAttribute("src",img_right);
 
 if (randomNumber1>randomNumber2){
