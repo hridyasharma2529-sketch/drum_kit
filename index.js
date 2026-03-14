@@ -1,22 +1,11 @@
 drum_buttons=document.querySelectorAll(".drum").length;
 
 for (i=0; i<drum_buttons;i++){
-    document.querySelectorAll(".drum")[i].addEventListener("click",function()
-    {
-        var buttonInnerHTML= this.innerHTML;
-        Makesound(buttonInnerHTML);
+    document.querySelectorAll(".drum")[i].addEventListener("click",function (){
 
-   
-    }
-    )
-    }
+  
 
-    document.addEventListener("keypress",function(event){
-        Makesound(event.key);
-    })
-    
-function Makesound(key){
-     switch (key){
+    switch (this.innerHTML){
 
         case"w":
         var audio=new Audio("sounds/crash.mp3");
@@ -52,5 +41,10 @@ function Makesound(key){
         var audio=new Audio("sounds/tom-4.mp3");
         audio.play();
         }
-}
+    }
+    )
+    };
+    
+
+
 
