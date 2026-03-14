@@ -9,11 +9,11 @@ for (i=0; i<drum_buttons;i++){
    
     }
     )
-    }
+    };
 
     document.addEventListener("keypress",function(event){
         Makesound(event.key);
-    })
+    });
     
 function Makesound(key){
      switch (key){
@@ -52,5 +52,5 @@ function Makesound(key){
         var audio=new Audio("sounds/tom-4.mp3");
         audio.play();
         }
-}
+};
 
