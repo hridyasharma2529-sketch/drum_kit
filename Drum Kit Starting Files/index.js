@@ -5,13 +5,11 @@ for (i=0; i<drum_buttons;i++){
     {
         var buttonInnerHTML= this.innerHTML;
         Makesound(buttonInnerHTML);
-
-   
     }
     )
     };
 
-    document.addEventListener("keypress",function(event){
+    document.addEventListener("keydown",function(event){
         Makesound(event.key);
     });
     
