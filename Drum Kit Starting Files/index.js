@@ -16,7 +16,7 @@ for (i=0; i<drum_buttons;i++){
     });
     
 function Makesound(key){
-     switch (key){
+ switch (key){
 
         case"w":
         var audio=new Audio("sounds/crash.mp3");
